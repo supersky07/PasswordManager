@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>page</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="../../js/zepto.js"></script>
+    <script src="../../js/core.js"></script>
+    <script src="../../js/Obj.js"></script>
+    <script src="../../js/Utils.js"></script>
+    <script src="../../js/Broadcaster.js"></script>
+    <script src="../../js/DelegateEvent.js"></script>
+    <style>
+        header{
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: blue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <div id="ground"></div>
+  
+  <script id="view_home" type="text/templete">
+      <header>这是一个列表</header>
+      <ul class="list">
+          <li><a href="#/content/1">第1行<a href="#/content"></li>
+          <li><a href="#/content/2">第2行</li>
+          <li><a href="#/content/3">第3行</li>
+          <li><a href="#/content/4">第4行</li>
+          <li><a href="#/content/5">第5行</li>
+          <li><a href="#/content/6">第6行</li>
+          <li><a href="#/content/7">第7行</li>
+          <li><a href="#/content/8">第8行</li>
+          <li><a href="#/content/9">第9行</li>
+          <li><a href="#/content/10">第10行</li>
+          <li><a href="#/content/11">第11行</li>
+          <li><a href="#/content/12">第12行</li>
+          <li><a href="#/content">第13行</li>
+          <li><a href="#/content">第14行</li>
+          <li><a href="#/content">第15行</li>
+          <li><a href="#/content">第16行</li>
+          <li><a href="#/content">第17行</li>
+          <li><a href="#/content">第18行</li>
+          <li><a href="#/content">第19行</li>
+          <li><a href="#/content">第20行</li>
+      </ul>
+  </script>
+  <script id="view_content" type="text/templete">
+    <a href="javascript:void(0)" action-type="back">返回</a>
+    <hr>
+     <p>详细内容</p>
+     <a href="#/about">关于scope<a>
+  </script>
+  <script id="view_about" type="text/templete">
+    <a href="javascript:void(0)" action-type="back">返回</a>
+    <hr>
+    <p>关于</p>
+  </script>
+    <script src="../../js/route/Router.js"></script>
+    <script src="../../js/route/HistoryManager.js"></script>
+    <script src="../../js/page/PageView.js"></script>
+    <script src="../../js/page/PageManager.js"></script>
+
+    <script src="js/Home.js"></script>
+
+  
+    <script src="js/index.js"></script>
+</body>
+</html>
